@@ -87,3 +87,5 @@ us16w['groups'] = final_model.apply(X)
 us16w['saves'].value_counts()  # 0: 229, 1: 442
 us16w['y_tilde'].value_counts()  # all predicted to 1
 print(us16w['groups'].value_counts())
+
+us16w.to_csv("clean_data/us16w.csv", index=False)
