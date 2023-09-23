@@ -1,0 +1,1 @@
+[embed]https://github.com/JosepER/gdansk_workshop/blob/main/R/presentation/gdansk_slides_psr.pdf[/embed]
