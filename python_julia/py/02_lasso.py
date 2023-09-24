@@ -21,14 +21,13 @@ X = pd.get_dummies(file[['sex', 'marital']], drop_first=True)
 y = file.values[:, 0]
 
 # 2.3- Define model
-
 # Grid of lambdas to try
 lambda_try = [30**(x / 100.0) for x in range(1, 200, 10)]
 
 # Initialize Lasso model
 model = LassoCV(alphas=lambda_try, cv=5, verbose=True)
 
-# Fit the model
+# 3. Fit the model
 model.fit(X, y)
 
 # Perform cross-validation and calculate RMSE for each lambda
